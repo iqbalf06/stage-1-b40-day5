@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="css/myproject.css" />
+    <link rel="icon" type="image/x-icon" href="https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="myproject.html" class="list-active">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact.html"> Contact Me </a>
+      </div>
+    </nav>
+    
+    <!-- Project -->
+    <!-- Form -->
+    <div class="project">
+      <div class="project-form">
+        <div class="form-container">
+          <form onsubmit="addProject(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label style="font-weight: bold;" for="input-project-title">Project Name</label>
+              <input id="input-project-title" />
+            </div>
+            <div class="date">
+                  <div class="startdate">
+                    <label style="font-weight: bold;" for="input-sdate">Start Date</label>
+                    <input id="input-sdate" type="date"/>
+                  </div>
+              <div class="edate">
+                  <div>
+                    <label style="font-weight: bold;" for="input-edate">End Date</label>
+                    <input id="input-edate" type="date"/>
+                  </div>
+              </div>    
+            </div>
+              <div> 
+              <label style="font-weight: bold" for="input-project-description">Description</label>
+              <textarea id="input-project-description"></textarea>
+            </div>
+            <div>
+              <label style="font-weight: bold;" for="checkbox">Technologies</label>
+            </div>
+            <div class="checkbox">
+              <div class="checkbox-left">
+                <input class="input-checkbox" type="checkbox" id="input-node-js" name="input-node-js" value="node-js">
+                <label for="input-node-js"> Node Js</label><br>
+                <input class="input-checkbox" type="checkbox" id="input-react" name="input-react" value="react">
+                <label for="input-react"> React Js</label><br>
+              </div>
+              <div class="checkbox-right">
+                <input class="input-checkbox" type="checkbox" id="input-java" name="input-java" value="java">
+                <label for="input-java"> Java</label><br>
+                <input class="input-checkbox" type="checkbox" id="input-python" name="input-python" value="python">
+                <label for="input-python"> Python</label><br>
+              </div>
+            </div>
+            <div>
+              <label style="font-weight: bold;"> Upload Image</label>
+              <div class="input-project-image-group">
+                <label for="input-project-image">
+                  <p>Choose</p>
+                  <img src="assets/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-project-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+
+   
+    
+      <hr class="line" />
+            <div>
+              <h1 class="judul-project" style="text-align: center; margin-top: 50px;">  MY PROJECT</h1>
+            </div>
+
+      <div id="descriptions" class="project-list">
+        <!-- dynamic description would be here -->
+        <div class="project-list-item">
+          <div class="project-image">
+            <img src="assets/img-card1.jpg" alt="" />
+          </div>
+          <div class="project-description">
+            
+              <h1>
+                <a class="judul-description" href="myproject-detail.html" 
+                target="_blank">Dumbways Mobile App - 2022</a>
+              </h1>
+              
+            <div class="detail-project-description">
+                durasi: 3 bulan
+            </div>
+
+            <div class="description">
+              <p>
+                App that used for dumbways student, it was
+                deployed and can downloaded on playstore.
+                Happy download.
+              </p>
+            </div>
+
+           
+            <div class="logo-icon">
+                <i class="fa-brands fa-node-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-python"></i>
+            </div>
+
+            <div class="btn-group">
+                <div class="btn-edit">
+                  <button>edit</button>
+                </div>
+                
+                <div class="btn-delete">
+                  <button>delete</button>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+
+
+
+        
+
+    </div>
+    <script src="/js/myproject.js"></script>
+  </body>
+  
+</html>

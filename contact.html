@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <link rel="icon" type="image/x-icon" href="https://www.filepicker.io/api/file/mWcP190oTCqiAo5VjrE8">
+        <link rel="stylesheet" href="/css/contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    
+    <body>
+        <nav>
+    
+            <div class="nav-left">
+                <img src="assets/logo.png" alt="logo">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="myproject.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        
+        </nav>
+
+        <h1>GET IN TOUCH</h1>
+
+        <form>
+            
+            <div>
+                <label for="input-name">Name</label>
+                <input id="input-name" type="text">
+            </div>
+            
+            <div>
+                <label for="input-email">Email</label>
+                <input id="input-email" type="email">
+            </div>
+
+            <div>
+                <label for="input-phone">Phone Number</label>
+                <input id="input-phone" type="number">
+            </div>
+            
+            <div>
+                <label for="input-subject">Subject</label>
+                <select id="input-subject">
+                    <option value="">Select</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="input-message">Your Message</label>
+                <textarea id="input-message"></textarea>
+            </div>
+            
+            <button type="button" onclick="submitData()">Submit</button>
+        </form>
+
+    </body>
+    <script src="/js/contact.js"></script>
+</html>
