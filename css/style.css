@@ -39,7 +39,7 @@ nav {
     flex: 50%;
     align-items: center; /* untuk mengtaur posisi atas tengah bawah */
     justify-content: flex-end; /* untuk mengtaur posisi kiri tengah kanan */
-    padding-right: 90px;
+    padding-right: 100px;
 }
 
 .nav-right a {
@@ -79,19 +79,3 @@ section {
     color: grey;
 }
 
-.skill-container {
-    display: flex;
-    margin-top: 25px;
-}
-
-.skill-container img {
-    width: 50px;
-}
-
-.social-media {
-    font-size: 30px;
-}
-
-.social-media i {
-    margin-right: 8px;
-}

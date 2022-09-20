@@ -1,21 +1,14 @@
-
 body {
+    margin: 0;
     padding: 0;
-    margin:0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
     
 nav {
     background-color: #f4f3f3;;
     display: flex;
     height: 7vh;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 50px;
-    font-family:'Segoe UI';
 }
 
 .nav-left {
@@ -52,11 +45,17 @@ h1 {
 .nav-right a {
     background-color: rgb(27, 16, 54);
     color: white;
-    padding: 8px 25px;
+    padding: px;
     text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family:'Segoe UI';
 }
 
 form {
