@@ -45,7 +45,7 @@ nav {
 .nav-right a {
     background-color: rgb(27, 16, 54);
     color: white;
-    padding: px;
+    padding: 8px 25px;
     text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
