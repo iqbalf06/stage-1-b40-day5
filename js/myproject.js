@@ -45,10 +45,8 @@ function addProject(event) {
 
 
   if (image.length != 0) {
-    // untuk membuat url gambar, agar tampil
     image = URL.createObjectURL(image[0])
   } else {
-    // jika tidak diisi
     return alert("Gambar wajib diisi!!")
   }
 
@@ -89,7 +87,7 @@ function renderProject() {
           <div class="project-description">
             
               <h1>
-                <a class="judul-description" href="project-detail.html" 
+                <a class="judul-description" href="myproject-detail.html" 
                 target="_blank">${dataProject[index].title}</a>
               </h1>
               
